@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Link Analyzer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+  </style>
+  <script src="link_analyzer.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Link Analyzer</h1>
+    <form id="link-form">
+      <input type="text" id="link" placeholder="Enter a link">
+      <button type="submit">Analyze</button>
+    </form>
+  </header>
+  <div id="results">
+    <section id="network-info" class="section">
+      <h2>Network Information</h2>
+      <table>
+        <tr>
+          <th>NetRange</th>
+          <td id="netrange"></td>
+        </tr>
+        <tr>
+          <th>OrgName</th>
+          <td id="orgname"></td>
+        </tr>
+      </table>
+    </section>
+    <section id="country" class="section">
+      <h2>Country</h2>
+      <p id="country"></p>
+    </section>
+    <section id="ip-validity" class="section">
+      <h2>IP Validity</h2>
+      <p id="ip-validity"></p>
+    </section>
+    <section id="malware-detection" class="section">
+      <h2>Malware Detection</h2>
+      <p id="malware-detection"></p>
+    </section>
+    <section id="sql-injection-detection" class="section">
+      <h2>SQL Injection Detection</h2>
+      <p id="sql-injection-detection"></p>
+    </section>
+  </div>
+</body>
+</html>
